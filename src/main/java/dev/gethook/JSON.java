@@ -117,6 +117,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.EventListData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.IngestAcceptedData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.LoginRequest.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.PlatformStats.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.ProviderPreset.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.PublishOutboundData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.PublishOutboundEventRequest.CustomTypeAdapterFactory());

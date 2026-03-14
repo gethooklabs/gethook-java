@@ -52,7 +52,7 @@ import dev.gethook.JSON;
 /**
  * Event
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T22:59:23.328315740Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T23:06:40.651162075Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Event {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
