@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * UpsertBrandSettingsRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T00:12:59.415663714Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T00:35:42.135945970Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class UpsertBrandSettingsRequest {
   public static final String SERIALIZED_NAME_COMPANY_NAME = "company_name";
   @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
