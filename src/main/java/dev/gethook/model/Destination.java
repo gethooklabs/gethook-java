@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Destination
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T00:35:42.135945970Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T21:12:30.792391534Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Destination {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
@@ -84,6 +84,11 @@ public class Destination {
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nonnull
   private String name;
+
+  public static final String SERIALIZED_NAME_PRESET = "preset";
+  @SerializedName(SERIALIZED_NAME_PRESET)
+  @javax.annotation.Nullable
+  private String preset;
 
   public static final String SERIALIZED_NAME_TIMEOUT_SECONDS = "timeout_seconds";
   @SerializedName(SERIALIZED_NAME_TIMEOUT_SECONDS)
@@ -231,6 +236,25 @@ public class Destination {
   }
 
 
+  public Destination preset(@javax.annotation.Nullable String preset) {
+    this.preset = preset;
+    return this;
+  }
+
+  /**
+   * Get preset
+   * @return preset
+   */
+  @javax.annotation.Nullable
+  public String getPreset() {
+    return preset;
+  }
+
+  public void setPreset(@javax.annotation.Nullable String preset) {
+    this.preset = preset;
+  }
+
+
   public Destination timeoutSeconds(@javax.annotation.Nonnull Integer timeoutSeconds) {
     this.timeoutSeconds = timeoutSeconds;
     return this;
@@ -286,13 +310,14 @@ public class Destination {
         Objects.equals(this.customHeaders, destination.customHeaders) &&
         Objects.equals(this.id, destination.id) &&
         Objects.equals(this.name, destination.name) &&
+        Objects.equals(this.preset, destination.preset) &&
         Objects.equals(this.timeoutSeconds, destination.timeoutSeconds) &&
         Objects.equals(this.url, destination.url);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, active, authConfig, createdAt, customHeaders, id, name, timeoutSeconds, url);
+    return Objects.hash(accountId, active, authConfig, createdAt, customHeaders, id, name, preset, timeoutSeconds, url);
   }
 
   @Override
@@ -306,6 +331,7 @@ public class Destination {
     sb.append("    customHeaders: ").append(toIndentedString(customHeaders)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    preset: ").append(toIndentedString(preset)).append("\n");
     sb.append("    timeoutSeconds: ").append(toIndentedString(timeoutSeconds)).append("\n");
     sb.append("    url: ").append(toIndentedString(url)).append("\n");
     sb.append("}");
@@ -329,7 +355,7 @@ public class Destination {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("account_id", "active", "auth_config", "created_at", "custom_headers", "id", "name", "timeout_seconds", "url"));
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "active", "auth_config", "created_at", "custom_headers", "id", "name", "preset", "timeout_seconds", "url"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(Arrays.asList("account_id", "active", "created_at", "id", "name", "timeout_seconds", "url"));
@@ -374,6 +400,9 @@ public class Destination {
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if ((jsonObj.get("preset") != null && !jsonObj.get("preset").isJsonNull()) && !jsonObj.get("preset").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `preset` to be a primitive type in the JSON string but got `%s`", jsonObj.get("preset").toString()));
       }
       if (!jsonObj.get("url").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `url` to be a primitive type in the JSON string but got `%s`", jsonObj.get("url").toString()));

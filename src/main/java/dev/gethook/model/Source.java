@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Source
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T00:35:42.135945970Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T21:12:30.792391534Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Source {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
@@ -89,6 +89,11 @@ public class Source {
   @SerializedName(SERIALIZED_NAME_PATH_TOKEN)
   @javax.annotation.Nonnull
   private String pathToken;
+
+  public static final String SERIALIZED_NAME_PROVIDER = "provider";
+  @SerializedName(SERIALIZED_NAME_PROVIDER)
+  @javax.annotation.Nullable
+  private String provider;
 
   public static final String SERIALIZED_NAME_STATUS = "status";
   @SerializedName(SERIALIZED_NAME_STATUS)
@@ -255,6 +260,25 @@ public class Source {
   }
 
 
+  public Source provider(@javax.annotation.Nullable String provider) {
+    this.provider = provider;
+    return this;
+  }
+
+  /**
+   * Get provider
+   * @return provider
+   */
+  @javax.annotation.Nullable
+  public String getProvider() {
+    return provider;
+  }
+
+  public void setProvider(@javax.annotation.Nullable String provider) {
+    this.provider = provider;
+  }
+
+
   public Source status(@javax.annotation.Nonnull String status) {
     this.status = status;
     return this;
@@ -311,13 +335,14 @@ public class Source {
         Objects.equals(this.ingestUrl, source.ingestUrl) &&
         Objects.equals(this.name, source.name) &&
         Objects.equals(this.pathToken, source.pathToken) &&
+        Objects.equals(this.provider, source.provider) &&
         Objects.equals(this.status, source.status) &&
         Objects.equals(this.verificationConfig, source.verificationConfig);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, authMode, createdAt, customDomainId, id, ingestUrl, name, pathToken, status, verificationConfig);
+    return Objects.hash(accountId, authMode, createdAt, customDomainId, id, ingestUrl, name, pathToken, provider, status, verificationConfig);
   }
 
   @Override
@@ -332,6 +357,7 @@ public class Source {
     sb.append("    ingestUrl: ").append(toIndentedString(ingestUrl)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    pathToken: ").append(toIndentedString(pathToken)).append("\n");
+    sb.append("    provider: ").append(toIndentedString(provider)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    verificationConfig: ").append(toIndentedString(verificationConfig)).append("\n");
     sb.append("}");
@@ -355,7 +381,7 @@ public class Source {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("account_id", "auth_mode", "created_at", "custom_domain_id", "id", "ingest_url", "name", "path_token", "status", "verification_config"));
+    openapiFields = new HashSet<String>(Arrays.asList("account_id", "auth_mode", "created_at", "custom_domain_id", "id", "ingest_url", "name", "path_token", "provider", "status", "verification_config"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(Arrays.asList("account_id", "auth_mode", "created_at", "id", "ingest_url", "name", "path_token", "status"));
@@ -412,6 +438,9 @@ public class Source {
       }
       if (!jsonObj.get("path_token").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `path_token` to be a primitive type in the JSON string but got `%s`", jsonObj.get("path_token").toString()));
+      }
+      if ((jsonObj.get("provider") != null && !jsonObj.get("provider").isJsonNull()) && !jsonObj.get("provider").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `provider` to be a primitive type in the JSON string but got `%s`", jsonObj.get("provider").toString()));
       }
       if (!jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));

@@ -14,6 +14,7 @@
 |**customHeaders** | **Object** |  |  [optional] |
 |**id** | **String** |  |  |
 |**name** | **String** |  |  |
+|**preset** | **String** |  |  [optional] |
 |**timeoutSeconds** | **Integer** |  |  |
 |**url** | **String** |  |  |
 

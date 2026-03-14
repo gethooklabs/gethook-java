@@ -110,12 +110,14 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.CustomDomain.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.DeliveryAttempt.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.Destination.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.DestinationPreset.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.ErrorResponse.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.Event.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.EventDetailData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.EventListData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.IngestAcceptedData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.LoginRequest.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.ProviderPreset.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.PublishOutboundData.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.PublishOutboundEventRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.RegisterRequest.CustomTypeAdapterFactory());

@@ -15,6 +15,7 @@
 |**ingestUrl** | **String** |  |  |
 |**name** | **String** |  |  |
 |**pathToken** | **String** |  |  |
+|**provider** | **String** |  |  [optional] |
 |**status** | **String** |  |  |
 |**verificationConfig** | **Object** |  |  [optional] |
 
