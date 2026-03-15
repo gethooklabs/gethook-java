@@ -12,6 +12,7 @@
 |**id** | **String** |  |  |
 |**name** | **String** |  |  |
 |**plan** | **String** |  |  |
+|**retentionDays** | **Integer** |  |  [optional] |
 
 
 

@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Account
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-14T23:17:03.112810696Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T05:42:21.060944439Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Account {
   public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -74,6 +74,11 @@ public class Account {
   @SerializedName(SERIALIZED_NAME_PLAN)
   @javax.annotation.Nonnull
   private String plan;
+
+  public static final String SERIALIZED_NAME_RETENTION_DAYS = "retention_days";
+  @SerializedName(SERIALIZED_NAME_RETENTION_DAYS)
+  @javax.annotation.Nullable
+  private Integer retentionDays;
 
   public Account() {
   }
@@ -173,6 +178,25 @@ public class Account {
   }
 
 
+  public Account retentionDays(@javax.annotation.Nullable Integer retentionDays) {
+    this.retentionDays = retentionDays;
+    return this;
+  }
+
+  /**
+   * Get retentionDays
+   * @return retentionDays
+   */
+  @javax.annotation.Nullable
+  public Integer getRetentionDays() {
+    return retentionDays;
+  }
+
+  public void setRetentionDays(@javax.annotation.Nullable Integer retentionDays) {
+    this.retentionDays = retentionDays;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -187,12 +211,13 @@ public class Account {
         Objects.equals(this.email, account.email) &&
         Objects.equals(this.id, account.id) &&
         Objects.equals(this.name, account.name) &&
-        Objects.equals(this.plan, account.plan);
+        Objects.equals(this.plan, account.plan) &&
+        Objects.equals(this.retentionDays, account.retentionDays);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, email, id, name, plan);
+    return Objects.hash(createdAt, email, id, name, plan, retentionDays);
   }
 
   @Override
@@ -204,6 +229,7 @@ public class Account {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    plan: ").append(toIndentedString(plan)).append("\n");
+    sb.append("    retentionDays: ").append(toIndentedString(retentionDays)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -225,7 +251,7 @@ public class Account {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("created_at", "email", "id", "name", "plan"));
+    openapiFields = new HashSet<String>(Arrays.asList("created_at", "email", "id", "name", "plan", "retention_days"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(Arrays.asList("created_at", "id", "name", "plan"));
