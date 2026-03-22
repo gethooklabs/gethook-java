@@ -49,7 +49,7 @@ import dev.gethook.JSON;
 /**
  * DeliveryAttempt
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T21:32:01.777673333Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T21:40:29.533737802Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class DeliveryAttempt {
   public static final String SERIALIZED_NAME_ATTEMPT_NUMBER = "attempt_number";
   @SerializedName(SERIALIZED_NAME_ATTEMPT_NUMBER)
