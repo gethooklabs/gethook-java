@@ -50,7 +50,7 @@ import dev.gethook.JSON;
 /**
  * AccountBootstrapData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T21:19:44.693276439Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T21:32:01.777673333Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class AccountBootstrapData {
   public static final String SERIALIZED_NAME_ACCOUNT = "account";
   @SerializedName(SERIALIZED_NAME_ACCOUNT)
