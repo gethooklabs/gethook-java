@@ -48,12 +48,73 @@ import dev.gethook.JSON;
 /**
  * CreateAPIKeyRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T18:36:15.734846632Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CreateAPIKeyRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nonnull
   private String name;
+
+  /**
+   * Gets or Sets role
+   */
+  @JsonAdapter(RoleEnum.Adapter.class)
+  public enum RoleEnum {
+    OWNER("owner"),
+    
+    ADMIN("admin"),
+    
+    EDITOR("editor"),
+    
+    VIEWER("viewer");
+
+    private String value;
+
+    RoleEnum(String value) {
+      this.value = value;
+    }
+
+    public String getValue() {
+      return value;
+    }
+
+    @Override
+    public String toString() {
+      return String.valueOf(value);
+    }
+
+    public static RoleEnum fromValue(String value) {
+      for (RoleEnum b : RoleEnum.values()) {
+        if (b.value.equals(value)) {
+          return b;
+        }
+      }
+      throw new IllegalArgumentException("Unexpected value '" + value + "'");
+    }
+
+    public static class Adapter extends TypeAdapter<RoleEnum> {
+      @Override
+      public void write(final JsonWriter jsonWriter, final RoleEnum enumeration) throws IOException {
+        jsonWriter.value(enumeration.getValue());
+      }
+
+      @Override
+      public RoleEnum read(final JsonReader jsonReader) throws IOException {
+        String value =  jsonReader.nextString();
+        return RoleEnum.fromValue(value);
+      }
+    }
+
+    public static void validateJsonElement(JsonElement jsonElement) throws IOException {
+      String value = jsonElement.getAsString();
+      RoleEnum.fromValue(value);
+    }
+  }
+
+  public static final String SERIALIZED_NAME_ROLE = "role";
+  @SerializedName(SERIALIZED_NAME_ROLE)
+  @javax.annotation.Nullable
+  private RoleEnum role;
 
   public CreateAPIKeyRequest() {
   }
@@ -77,6 +138,25 @@ public class CreateAPIKeyRequest {
   }
 
 
+  public CreateAPIKeyRequest role(@javax.annotation.Nullable RoleEnum role) {
+    this.role = role;
+    return this;
+  }
+
+  /**
+   * Get role
+   * @return role
+   */
+  @javax.annotation.Nullable
+  public RoleEnum getRole() {
+    return role;
+  }
+
+  public void setRole(@javax.annotation.Nullable RoleEnum role) {
+    this.role = role;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -87,12 +167,13 @@ public class CreateAPIKeyRequest {
       return false;
     }
     CreateAPIKeyRequest createAPIKeyRequest = (CreateAPIKeyRequest) o;
-    return Objects.equals(this.name, createAPIKeyRequest.name);
+    return Objects.equals(this.name, createAPIKeyRequest.name) &&
+        Objects.equals(this.role, createAPIKeyRequest.role);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(name, role);
   }
 
   @Override
@@ -100,6 +181,7 @@ public class CreateAPIKeyRequest {
     StringBuilder sb = new StringBuilder();
     sb.append("class CreateAPIKeyRequest {\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    role: ").append(toIndentedString(role)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -121,7 +203,7 @@ public class CreateAPIKeyRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("name"));
+    openapiFields = new HashSet<String>(Arrays.asList("name", "role"));
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>(Arrays.asList("name"));
@@ -157,6 +239,13 @@ public class CreateAPIKeyRequest {
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if ((jsonObj.get("role") != null && !jsonObj.get("role").isJsonNull()) && !jsonObj.get("role").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `role` to be a primitive type in the JSON string but got `%s`", jsonObj.get("role").toString()));
+      }
+      // validate the optional field `role`
+      if (jsonObj.get("role") != null && !jsonObj.get("role").isJsonNull()) {
+        RoleEnum.validateJsonElement(jsonObj.get("role"));
       }
   }
 

@@ -100,6 +100,7 @@ public class JSON {
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.APIKeyWithSecret.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.Account.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.AccountBootstrapData.CustomTypeAdapterFactory());
+        gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.AggregateTotals.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.BrandSettings.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.CreateAPIKeyRequest.CustomTypeAdapterFactory());
         gsonBuilder.registerTypeAdapterFactory(new dev.gethook.model.CreateAccountRequest.CustomTypeAdapterFactory());

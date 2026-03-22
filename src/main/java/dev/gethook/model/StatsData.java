@@ -19,6 +19,7 @@ import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import dev.gethook.model.AggregateTotals;
 import dev.gethook.model.StatsDailyItem;
 import dev.gethook.model.StatsStatusItem;
 import java.io.IOException;
@@ -52,7 +53,7 @@ import dev.gethook.JSON;
 /**
  * StatsData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T18:36:15.734846632Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class StatsData {
   public static final String SERIALIZED_NAME_BY_STATUS = "by_status";
   @SerializedName(SERIALIZED_NAME_BY_STATUS)
@@ -63,6 +64,11 @@ public class StatsData {
   @SerializedName(SERIALIZED_NAME_DAILY)
   @javax.annotation.Nonnull
   private List<StatsDailyItem> daily = new ArrayList<>();
+
+  public static final String SERIALIZED_NAME_TOTALS = "totals";
+  @SerializedName(SERIALIZED_NAME_TOTALS)
+  @javax.annotation.Nonnull
+  private AggregateTotals totals;
 
   public StatsData() {
   }
@@ -121,6 +127,25 @@ public class StatsData {
   }
 
 
+  public StatsData totals(@javax.annotation.Nonnull AggregateTotals totals) {
+    this.totals = totals;
+    return this;
+  }
+
+  /**
+   * Get totals
+   * @return totals
+   */
+  @javax.annotation.Nonnull
+  public AggregateTotals getTotals() {
+    return totals;
+  }
+
+  public void setTotals(@javax.annotation.Nonnull AggregateTotals totals) {
+    this.totals = totals;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -132,12 +157,13 @@ public class StatsData {
     }
     StatsData statsData = (StatsData) o;
     return Objects.equals(this.byStatus, statsData.byStatus) &&
-        Objects.equals(this.daily, statsData.daily);
+        Objects.equals(this.daily, statsData.daily) &&
+        Objects.equals(this.totals, statsData.totals);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(byStatus, daily);
+    return Objects.hash(byStatus, daily, totals);
   }
 
   @Override
@@ -146,6 +172,7 @@ public class StatsData {
     sb.append("class StatsData {\n");
     sb.append("    byStatus: ").append(toIndentedString(byStatus)).append("\n");
     sb.append("    daily: ").append(toIndentedString(daily)).append("\n");
+    sb.append("    totals: ").append(toIndentedString(totals)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -167,10 +194,10 @@ public class StatsData {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("by_status", "daily"));
+    openapiFields = new HashSet<String>(Arrays.asList("by_status", "daily", "totals"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("by_status", "daily"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("by_status", "daily", "totals"));
   }
 
   /**
@@ -221,6 +248,8 @@ public class StatsData {
           StatsDailyItem.validateJsonElement(jsonArraydaily.get(i));
         }
       }
+      // validate the required field `totals`
+      AggregateTotals.validateJsonElement(jsonObj.get("totals"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

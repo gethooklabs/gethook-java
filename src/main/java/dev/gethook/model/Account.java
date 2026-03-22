@@ -48,18 +48,8 @@ import dev.gethook.JSON;
 /**
  * Account
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T18:36:15.734846632Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Account {
-  public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
-  @SerializedName(SERIALIZED_NAME_CREATED_AT)
-  @javax.annotation.Nonnull
-  private String createdAt;
-
-  public static final String SERIALIZED_NAME_EMAIL = "email";
-  @SerializedName(SERIALIZED_NAME_EMAIL)
-  @javax.annotation.Nullable
-  private String email;
-
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
@@ -77,49 +67,16 @@ public class Account {
 
   public static final String SERIALIZED_NAME_RETENTION_DAYS = "retention_days";
   @SerializedName(SERIALIZED_NAME_RETENTION_DAYS)
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   private Integer retentionDays;
+
+  public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
+  @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
+  private String createdAt;
 
   public Account() {
   }
-
-  public Account createdAt(@javax.annotation.Nonnull String createdAt) {
-    this.createdAt = createdAt;
-    return this;
-  }
-
-  /**
-   * Get createdAt
-   * @return createdAt
-   */
-  @javax.annotation.Nonnull
-  public String getCreatedAt() {
-    return createdAt;
-  }
-
-  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
-    this.createdAt = createdAt;
-  }
-
-
-  public Account email(@javax.annotation.Nullable String email) {
-    this.email = email;
-    return this;
-  }
-
-  /**
-   * Get email
-   * @return email
-   */
-  @javax.annotation.Nullable
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(@javax.annotation.Nullable String email) {
-    this.email = email;
-  }
-
 
   public Account id(@javax.annotation.Nonnull String id) {
     this.id = id;
@@ -178,7 +135,7 @@ public class Account {
   }
 
 
-  public Account retentionDays(@javax.annotation.Nullable Integer retentionDays) {
+  public Account retentionDays(@javax.annotation.Nonnull Integer retentionDays) {
     this.retentionDays = retentionDays;
     return this;
   }
@@ -187,13 +144,32 @@ public class Account {
    * Get retentionDays
    * @return retentionDays
    */
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public Integer getRetentionDays() {
     return retentionDays;
   }
 
-  public void setRetentionDays(@javax.annotation.Nullable Integer retentionDays) {
+  public void setRetentionDays(@javax.annotation.Nonnull Integer retentionDays) {
     this.retentionDays = retentionDays;
+  }
+
+
+  public Account createdAt(@javax.annotation.Nonnull String createdAt) {
+    this.createdAt = createdAt;
+    return this;
+  }
+
+  /**
+   * Get createdAt
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  public String getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
+    this.createdAt = createdAt;
   }
 
 
@@ -207,29 +183,27 @@ public class Account {
       return false;
     }
     Account account = (Account) o;
-    return Objects.equals(this.createdAt, account.createdAt) &&
-        Objects.equals(this.email, account.email) &&
-        Objects.equals(this.id, account.id) &&
+    return Objects.equals(this.id, account.id) &&
         Objects.equals(this.name, account.name) &&
         Objects.equals(this.plan, account.plan) &&
-        Objects.equals(this.retentionDays, account.retentionDays);
+        Objects.equals(this.retentionDays, account.retentionDays) &&
+        Objects.equals(this.createdAt, account.createdAt);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, email, id, name, plan, retentionDays);
+    return Objects.hash(id, name, plan, retentionDays, createdAt);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class Account {\n");
-    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    plan: ").append(toIndentedString(plan)).append("\n");
     sb.append("    retentionDays: ").append(toIndentedString(retentionDays)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -251,10 +225,10 @@ public class Account {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("created_at", "email", "id", "name", "plan", "retention_days"));
+    openapiFields = new HashSet<String>(Arrays.asList("id", "name", "plan", "retention_days", "created_at"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("created_at", "id", "name", "plan"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "name", "plan", "retention_days", "created_at"));
   }
 
   /**
@@ -285,12 +259,6 @@ public class Account {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("created_at").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `created_at` to be a primitive type in the JSON string but got `%s`", jsonObj.get("created_at").toString()));
-      }
-      if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
-      }
       if (!jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
@@ -299,6 +267,9 @@ public class Account {
       }
       if (!jsonObj.get("plan").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `plan` to be a primitive type in the JSON string but got `%s`", jsonObj.get("plan").toString()));
+      }
+      if (!jsonObj.get("created_at").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `created_at` to be a primitive type in the JSON string but got `%s`", jsonObj.get("created_at").toString()));
       }
   }
 

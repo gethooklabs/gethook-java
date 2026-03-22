@@ -48,17 +48,17 @@ import dev.gethook.JSON;
 /**
  * RegisterRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T18:36:15.734846632Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class RegisterRequest {
-  public static final String SERIALIZED_NAME_EMAIL = "email";
-  @SerializedName(SERIALIZED_NAME_EMAIL)
-  @javax.annotation.Nonnull
-  private String email;
-
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nonnull
   private String name;
+
+  public static final String SERIALIZED_NAME_EMAIL = "email";
+  @SerializedName(SERIALIZED_NAME_EMAIL)
+  @javax.annotation.Nonnull
+  private String email;
 
   public static final String SERIALIZED_NAME_PASSWORD = "password";
   @SerializedName(SERIALIZED_NAME_PASSWORD)
@@ -67,25 +67,6 @@ public class RegisterRequest {
 
   public RegisterRequest() {
   }
-
-  public RegisterRequest email(@javax.annotation.Nonnull String email) {
-    this.email = email;
-    return this;
-  }
-
-  /**
-   * Get email
-   * @return email
-   */
-  @javax.annotation.Nonnull
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(@javax.annotation.Nonnull String email) {
-    this.email = email;
-  }
-
 
   public RegisterRequest name(@javax.annotation.Nonnull String name) {
     this.name = name;
@@ -103,6 +84,25 @@ public class RegisterRequest {
 
   public void setName(@javax.annotation.Nonnull String name) {
     this.name = name;
+  }
+
+
+  public RegisterRequest email(@javax.annotation.Nonnull String email) {
+    this.email = email;
+    return this;
+  }
+
+  /**
+   * Get email
+   * @return email
+   */
+  @javax.annotation.Nonnull
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(@javax.annotation.Nonnull String email) {
+    this.email = email;
   }
 
 
@@ -135,22 +135,22 @@ public class RegisterRequest {
       return false;
     }
     RegisterRequest registerRequest = (RegisterRequest) o;
-    return Objects.equals(this.email, registerRequest.email) &&
-        Objects.equals(this.name, registerRequest.name) &&
+    return Objects.equals(this.name, registerRequest.name) &&
+        Objects.equals(this.email, registerRequest.email) &&
         Objects.equals(this.password, registerRequest.password);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(email, name, password);
+    return Objects.hash(name, email, password);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class RegisterRequest {\n");
-    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
     sb.append("}");
     return sb.toString();
@@ -173,10 +173,10 @@ public class RegisterRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("email", "name", "password"));
+    openapiFields = new HashSet<String>(Arrays.asList("name", "email", "password"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("email", "name", "password"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("name", "email", "password"));
   }
 
   /**
@@ -207,11 +207,11 @@ public class RegisterRequest {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("email").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
-      }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
+      }
+      if (!jsonObj.get("email").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
       if (!jsonObj.get("password").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `password` to be a primitive type in the JSON string but got `%s`", jsonObj.get("password").toString()));

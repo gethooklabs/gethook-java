@@ -46,34 +46,82 @@ import java.util.Set;
 import dev.gethook.JSON;
 
 /**
- * CreateAccountRequest
+ * Authoritative event totals derived from event_daily_stats (past days) plus live events (today). Accurate even after events are purged by the retention cleaner. 
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
-public class CreateAccountRequest {
-  public static final String SERIALIZED_NAME_NAME = "name";
-  @SerializedName(SERIALIZED_NAME_NAME)
+public class AggregateTotals {
+  public static final String SERIALIZED_NAME_TOTAL = "total";
+  @SerializedName(SERIALIZED_NAME_TOTAL)
   @javax.annotation.Nonnull
-  private String name;
+  private Integer total;
 
-  public CreateAccountRequest() {
+  public static final String SERIALIZED_NAME_DELIVERED = "delivered";
+  @SerializedName(SERIALIZED_NAME_DELIVERED)
+  @javax.annotation.Nonnull
+  private Integer delivered;
+
+  public static final String SERIALIZED_NAME_FAILED = "failed";
+  @SerializedName(SERIALIZED_NAME_FAILED)
+  @javax.annotation.Nonnull
+  private Integer failed;
+
+  public AggregateTotals() {
   }
 
-  public CreateAccountRequest name(@javax.annotation.Nonnull String name) {
-    this.name = name;
+  public AggregateTotals total(@javax.annotation.Nonnull Integer total) {
+    this.total = total;
     return this;
   }
 
   /**
-   * Get name
-   * @return name
+   * Get total
+   * @return total
    */
   @javax.annotation.Nonnull
-  public String getName() {
-    return name;
+  public Integer getTotal() {
+    return total;
   }
 
-  public void setName(@javax.annotation.Nonnull String name) {
-    this.name = name;
+  public void setTotal(@javax.annotation.Nonnull Integer total) {
+    this.total = total;
+  }
+
+
+  public AggregateTotals delivered(@javax.annotation.Nonnull Integer delivered) {
+    this.delivered = delivered;
+    return this;
+  }
+
+  /**
+   * Get delivered
+   * @return delivered
+   */
+  @javax.annotation.Nonnull
+  public Integer getDelivered() {
+    return delivered;
+  }
+
+  public void setDelivered(@javax.annotation.Nonnull Integer delivered) {
+    this.delivered = delivered;
+  }
+
+
+  public AggregateTotals failed(@javax.annotation.Nonnull Integer failed) {
+    this.failed = failed;
+    return this;
+  }
+
+  /**
+   * Get failed
+   * @return failed
+   */
+  @javax.annotation.Nonnull
+  public Integer getFailed() {
+    return failed;
+  }
+
+  public void setFailed(@javax.annotation.Nonnull Integer failed) {
+    this.failed = failed;
   }
 
 
@@ -86,20 +134,24 @@ public class CreateAccountRequest {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    CreateAccountRequest createAccountRequest = (CreateAccountRequest) o;
-    return Objects.equals(this.name, createAccountRequest.name);
+    AggregateTotals aggregateTotals = (AggregateTotals) o;
+    return Objects.equals(this.total, aggregateTotals.total) &&
+        Objects.equals(this.delivered, aggregateTotals.delivered) &&
+        Objects.equals(this.failed, aggregateTotals.failed);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(total, delivered, failed);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class CreateAccountRequest {\n");
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("class AggregateTotals {\n");
+    sb.append("    total: ").append(toIndentedString(total)).append("\n");
+    sb.append("    delivered: ").append(toIndentedString(delivered)).append("\n");
+    sb.append("    failed: ").append(toIndentedString(failed)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -121,65 +173,62 @@ public class CreateAccountRequest {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("name"));
+    openapiFields = new HashSet<String>(Arrays.asList("total", "delivered", "failed"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("name"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("total", "delivered", "failed"));
   }
 
   /**
    * Validates the JSON Element and throws an exception if issues found
    *
    * @param jsonElement JSON Element
-   * @throws IOException if the JSON Element is invalid with respect to CreateAccountRequest
+   * @throws IOException if the JSON Element is invalid with respect to AggregateTotals
    */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
-        if (!CreateAccountRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in CreateAccountRequest is not found in the empty JSON string", CreateAccountRequest.openapiRequiredFields.toString()));
+        if (!AggregateTotals.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field(s) %s in AggregateTotals is not found in the empty JSON string", AggregateTotals.openapiRequiredFields.toString()));
         }
       }
 
       Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
       // check to see if the JSON string contains additional fields
       for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!CreateAccountRequest.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `CreateAccountRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
+        if (!AggregateTotals.openapiFields.contains(entry.getKey())) {
+          throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The field `%s` in the JSON string is not defined in the `AggregateTotals` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
 
       // check to make sure all required properties/fields are present in the JSON string
-      for (String requiredField : CreateAccountRequest.openapiRequiredFields) {
+      for (String requiredField : AggregateTotals.openapiRequiredFields) {
         if (jsonElement.getAsJsonObject().get(requiredField) == null) {
           throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("name").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
-      }
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {
     @SuppressWarnings("unchecked")
     @Override
     public <T> TypeAdapter<T> create(Gson gson, TypeToken<T> type) {
-       if (!CreateAccountRequest.class.isAssignableFrom(type.getRawType())) {
-         return null; // this class only serializes 'CreateAccountRequest' and its subtypes
+       if (!AggregateTotals.class.isAssignableFrom(type.getRawType())) {
+         return null; // this class only serializes 'AggregateTotals' and its subtypes
        }
        final TypeAdapter<JsonElement> elementAdapter = gson.getAdapter(JsonElement.class);
-       final TypeAdapter<CreateAccountRequest> thisAdapter
-                        = gson.getDelegateAdapter(this, TypeToken.get(CreateAccountRequest.class));
+       final TypeAdapter<AggregateTotals> thisAdapter
+                        = gson.getDelegateAdapter(this, TypeToken.get(AggregateTotals.class));
 
-       return (TypeAdapter<T>) new TypeAdapter<CreateAccountRequest>() {
+       return (TypeAdapter<T>) new TypeAdapter<AggregateTotals>() {
            @Override
-           public void write(JsonWriter out, CreateAccountRequest value) throws IOException {
+           public void write(JsonWriter out, AggregateTotals value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
              elementAdapter.write(out, obj);
            }
 
            @Override
-           public CreateAccountRequest read(JsonReader in) throws IOException {
+           public AggregateTotals read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
              return thisAdapter.fromJsonTree(jsonElement);
@@ -190,18 +239,18 @@ public class CreateAccountRequest {
   }
 
   /**
-   * Create an instance of CreateAccountRequest given an JSON string
+   * Create an instance of AggregateTotals given an JSON string
    *
    * @param jsonString JSON string
-   * @return An instance of CreateAccountRequest
-   * @throws IOException if the JSON string is invalid with respect to CreateAccountRequest
+   * @return An instance of AggregateTotals
+   * @throws IOException if the JSON string is invalid with respect to AggregateTotals
    */
-  public static CreateAccountRequest fromJson(String jsonString) throws IOException {
-    return JSON.getGson().fromJson(jsonString, CreateAccountRequest.class);
+  public static AggregateTotals fromJson(String jsonString) throws IOException {
+    return JSON.getGson().fromJson(jsonString, AggregateTotals.class);
   }
 
   /**
-   * Convert an instance of CreateAccountRequest to an JSON string
+   * Convert an instance of AggregateTotals to an JSON string
    *
    * @return JSON string
    */

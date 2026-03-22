@@ -48,83 +48,55 @@ import dev.gethook.JSON;
 /**
  * APIKeyWithSecret
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-15T18:36:15.734846632Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T17:26:43.976331115Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class APIKeyWithSecret {
-  public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
-  @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
-  @javax.annotation.Nonnull
-  private String accountId;
-
-  public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
-  @SerializedName(SERIALIZED_NAME_CREATED_AT)
-  @javax.annotation.Nonnull
-  private String createdAt;
-
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
   @javax.annotation.Nonnull
   private String id;
 
-  public static final String SERIALIZED_NAME_KEY = "key";
-  @SerializedName(SERIALIZED_NAME_KEY)
+  public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
+  @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
   @javax.annotation.Nonnull
-  private String key;
+  private String accountId;
 
-  public static final String SERIALIZED_NAME_KEY_PREFIX = "key_prefix";
-  @SerializedName(SERIALIZED_NAME_KEY_PREFIX)
-  @javax.annotation.Nonnull
-  private String keyPrefix;
+  public static final String SERIALIZED_NAME_USER_ID = "user_id";
+  @SerializedName(SERIALIZED_NAME_USER_ID)
+  @javax.annotation.Nullable
+  private String userId;
 
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
   @javax.annotation.Nonnull
   private String name;
 
+  public static final String SERIALIZED_NAME_ROLE = "role";
+  @SerializedName(SERIALIZED_NAME_ROLE)
+  @javax.annotation.Nonnull
+  private String role;
+
+  public static final String SERIALIZED_NAME_KEY_PREFIX = "key_prefix";
+  @SerializedName(SERIALIZED_NAME_KEY_PREFIX)
+  @javax.annotation.Nonnull
+  private String keyPrefix;
+
+  public static final String SERIALIZED_NAME_CREATED_AT = "created_at";
+  @SerializedName(SERIALIZED_NAME_CREATED_AT)
+  @javax.annotation.Nonnull
+  private String createdAt;
+
   public static final String SERIALIZED_NAME_REVOKED_AT = "revoked_at";
   @SerializedName(SERIALIZED_NAME_REVOKED_AT)
   @javax.annotation.Nullable
   private String revokedAt;
 
+  public static final String SERIALIZED_NAME_KEY = "key";
+  @SerializedName(SERIALIZED_NAME_KEY)
+  @javax.annotation.Nonnull
+  private String key;
+
   public APIKeyWithSecret() {
   }
-
-  public APIKeyWithSecret accountId(@javax.annotation.Nonnull String accountId) {
-    this.accountId = accountId;
-    return this;
-  }
-
-  /**
-   * Get accountId
-   * @return accountId
-   */
-  @javax.annotation.Nonnull
-  public String getAccountId() {
-    return accountId;
-  }
-
-  public void setAccountId(@javax.annotation.Nonnull String accountId) {
-    this.accountId = accountId;
-  }
-
-
-  public APIKeyWithSecret createdAt(@javax.annotation.Nonnull String createdAt) {
-    this.createdAt = createdAt;
-    return this;
-  }
-
-  /**
-   * Get createdAt
-   * @return createdAt
-   */
-  @javax.annotation.Nonnull
-  public String getCreatedAt() {
-    return createdAt;
-  }
-
-  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
-    this.createdAt = createdAt;
-  }
-
 
   public APIKeyWithSecret id(@javax.annotation.Nonnull String id) {
     this.id = id;
@@ -145,41 +117,41 @@ public class APIKeyWithSecret {
   }
 
 
-  public APIKeyWithSecret key(@javax.annotation.Nonnull String key) {
-    this.key = key;
+  public APIKeyWithSecret accountId(@javax.annotation.Nonnull String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
   /**
-   * Get key
-   * @return key
+   * Get accountId
+   * @return accountId
    */
   @javax.annotation.Nonnull
-  public String getKey() {
-    return key;
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setKey(@javax.annotation.Nonnull String key) {
-    this.key = key;
+  public void setAccountId(@javax.annotation.Nonnull String accountId) {
+    this.accountId = accountId;
   }
 
 
-  public APIKeyWithSecret keyPrefix(@javax.annotation.Nonnull String keyPrefix) {
-    this.keyPrefix = keyPrefix;
+  public APIKeyWithSecret userId(@javax.annotation.Nullable String userId) {
+    this.userId = userId;
     return this;
   }
 
   /**
-   * Get keyPrefix
-   * @return keyPrefix
+   * Get userId
+   * @return userId
    */
-  @javax.annotation.Nonnull
-  public String getKeyPrefix() {
-    return keyPrefix;
+  @javax.annotation.Nullable
+  public String getUserId() {
+    return userId;
   }
 
-  public void setKeyPrefix(@javax.annotation.Nonnull String keyPrefix) {
-    this.keyPrefix = keyPrefix;
+  public void setUserId(@javax.annotation.Nullable String userId) {
+    this.userId = userId;
   }
 
 
@@ -202,6 +174,63 @@ public class APIKeyWithSecret {
   }
 
 
+  public APIKeyWithSecret role(@javax.annotation.Nonnull String role) {
+    this.role = role;
+    return this;
+  }
+
+  /**
+   * Get role
+   * @return role
+   */
+  @javax.annotation.Nonnull
+  public String getRole() {
+    return role;
+  }
+
+  public void setRole(@javax.annotation.Nonnull String role) {
+    this.role = role;
+  }
+
+
+  public APIKeyWithSecret keyPrefix(@javax.annotation.Nonnull String keyPrefix) {
+    this.keyPrefix = keyPrefix;
+    return this;
+  }
+
+  /**
+   * Get keyPrefix
+   * @return keyPrefix
+   */
+  @javax.annotation.Nonnull
+  public String getKeyPrefix() {
+    return keyPrefix;
+  }
+
+  public void setKeyPrefix(@javax.annotation.Nonnull String keyPrefix) {
+    this.keyPrefix = keyPrefix;
+  }
+
+
+  public APIKeyWithSecret createdAt(@javax.annotation.Nonnull String createdAt) {
+    this.createdAt = createdAt;
+    return this;
+  }
+
+  /**
+   * Get createdAt
+   * @return createdAt
+   */
+  @javax.annotation.Nonnull
+  public String getCreatedAt() {
+    return createdAt;
+  }
+
+  public void setCreatedAt(@javax.annotation.Nonnull String createdAt) {
+    this.createdAt = createdAt;
+  }
+
+
   public APIKeyWithSecret revokedAt(@javax.annotation.Nullable String revokedAt) {
     this.revokedAt = revokedAt;
     return this;
@@ -221,6 +250,25 @@ public class APIKeyWithSecret {
   }
 
 
+  public APIKeyWithSecret key(@javax.annotation.Nonnull String key) {
+    this.key = key;
+    return this;
+  }
+
+  /**
+   * Full plaintext key — returned once at creation time only.
+   * @return key
+   */
+  @javax.annotation.Nonnull
+  public String getKey() {
+    return key;
+  }
+
+  public void setKey(@javax.annotation.Nonnull String key) {
+    this.key = key;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -231,31 +279,35 @@ public class APIKeyWithSecret {
       return false;
     }
     APIKeyWithSecret apIKeyWithSecret = (APIKeyWithSecret) o;
-    return Objects.equals(this.accountId, apIKeyWithSecret.accountId) &&
-        Objects.equals(this.createdAt, apIKeyWithSecret.createdAt) &&
-        Objects.equals(this.id, apIKeyWithSecret.id) &&
-        Objects.equals(this.key, apIKeyWithSecret.key) &&
-        Objects.equals(this.keyPrefix, apIKeyWithSecret.keyPrefix) &&
+    return Objects.equals(this.id, apIKeyWithSecret.id) &&
+        Objects.equals(this.accountId, apIKeyWithSecret.accountId) &&
+        Objects.equals(this.userId, apIKeyWithSecret.userId) &&
         Objects.equals(this.name, apIKeyWithSecret.name) &&
-        Objects.equals(this.revokedAt, apIKeyWithSecret.revokedAt);
+        Objects.equals(this.role, apIKeyWithSecret.role) &&
+        Objects.equals(this.keyPrefix, apIKeyWithSecret.keyPrefix) &&
+        Objects.equals(this.createdAt, apIKeyWithSecret.createdAt) &&
+        Objects.equals(this.revokedAt, apIKeyWithSecret.revokedAt) &&
+        Objects.equals(this.key, apIKeyWithSecret.key);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(accountId, createdAt, id, key, keyPrefix, name, revokedAt);
+    return Objects.hash(id, accountId, userId, name, role, keyPrefix, createdAt, revokedAt, key);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class APIKeyWithSecret {\n");
-    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
-    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
-    sb.append("    key: ").append(toIndentedString(key)).append("\n");
-    sb.append("    keyPrefix: ").append(toIndentedString(keyPrefix)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    role: ").append(toIndentedString(role)).append("\n");
+    sb.append("    keyPrefix: ").append(toIndentedString(keyPrefix)).append("\n");
+    sb.append("    createdAt: ").append(toIndentedString(createdAt)).append("\n");
     sb.append("    revokedAt: ").append(toIndentedString(revokedAt)).append("\n");
+    sb.append("    key: ").append(toIndentedString(key)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -277,10 +329,10 @@ public class APIKeyWithSecret {
 
   static {
     // a set of all properties/fields (JSON key names)
-    openapiFields = new HashSet<String>(Arrays.asList("account_id", "created_at", "id", "key", "key_prefix", "name", "revoked_at"));
+    openapiFields = new HashSet<String>(Arrays.asList("id", "account_id", "user_id", "name", "role", "key_prefix", "created_at", "revoked_at", "key"));
 
     // a set of required properties/fields (JSON key names)
-    openapiRequiredFields = new HashSet<String>(Arrays.asList("account_id", "created_at", "id", "key", "key_prefix", "name"));
+    openapiRequiredFields = new HashSet<String>(Arrays.asList("id", "account_id", "name", "role", "key_prefix", "created_at", "key"));
   }
 
   /**
@@ -311,26 +363,32 @@ public class APIKeyWithSecret {
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if (!jsonObj.get("account_id").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `account_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("account_id").toString()));
-      }
-      if (!jsonObj.get("created_at").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `created_at` to be a primitive type in the JSON string but got `%s`", jsonObj.get("created_at").toString()));
-      }
       if (!jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
-      if (!jsonObj.get("key").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("key").toString()));
+      if (!jsonObj.get("account_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `account_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("account_id").toString()));
       }
-      if (!jsonObj.get("key_prefix").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `key_prefix` to be a primitive type in the JSON string but got `%s`", jsonObj.get("key_prefix").toString()));
+      if ((jsonObj.get("user_id") != null && !jsonObj.get("user_id").isJsonNull()) && !jsonObj.get("user_id").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `user_id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("user_id").toString()));
       }
       if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
+      if (!jsonObj.get("role").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `role` to be a primitive type in the JSON string but got `%s`", jsonObj.get("role").toString()));
+      }
+      if (!jsonObj.get("key_prefix").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `key_prefix` to be a primitive type in the JSON string but got `%s`", jsonObj.get("key_prefix").toString()));
+      }
+      if (!jsonObj.get("created_at").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `created_at` to be a primitive type in the JSON string but got `%s`", jsonObj.get("created_at").toString()));
+      }
       if ((jsonObj.get("revoked_at") != null && !jsonObj.get("revoked_at").isJsonNull()) && !jsonObj.get("revoked_at").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `revoked_at` to be a primitive type in the JSON string but got `%s`", jsonObj.get("revoked_at").toString()));
+      }
+      if (!jsonObj.get("key").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format(java.util.Locale.ROOT, "Expected the field `key` to be a primitive type in the JSON string but got `%s`", jsonObj.get("key").toString()));
       }
   }
 

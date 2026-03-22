@@ -7,12 +7,11 @@
 
 | Name | Type | Description | Notes |
 |------------ | ------------- | ------------- | -------------|
-|**createdAt** | **String** |  |  |
-|**email** | **String** |  |  [optional] |
 |**id** | **String** |  |  |
 |**name** | **String** |  |  |
 |**plan** | **String** |  |  |
-|**retentionDays** | **Integer** |  |  [optional] |
+|**retentionDays** | **Integer** |  |  |
+|**createdAt** | **String** |  |  |
 
 
 
