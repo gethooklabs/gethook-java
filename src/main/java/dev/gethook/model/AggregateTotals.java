@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Authoritative event totals derived from event_daily_stats (past days) plus live events (today). Accurate even after events are purged by the retention cleaner. 
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T21:40:29.533737802Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-22T22:12:51.749923599Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class AggregateTotals {
   public static final String SERIALIZED_NAME_TOTAL = "total";
   @SerializedName(SERIALIZED_NAME_TOTAL)
