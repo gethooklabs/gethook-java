@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * APIKey
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-28T23:26:14.347876074Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-28T23:28:30.413362350Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class APIKey {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
