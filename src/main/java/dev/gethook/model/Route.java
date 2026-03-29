@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Route
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-29T18:00:38.516194880Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-29T20:02:46.001211956Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Route {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
