@@ -51,7 +51,7 @@ import dev.gethook.JSON;
 /**
  * EventListData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-03-29T21:07:32.711968626Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-18T20:19:13.798594447Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class EventListData {
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
