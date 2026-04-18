@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * ReplayEventData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-18T20:19:13.798594447Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-18T20:30:15.713682604Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class ReplayEventData {
   public static final String SERIALIZED_NAME_ORIGINAL_EVENT_ID = "original_event_id";
   @SerializedName(SERIALIZED_NAME_ORIGINAL_EVENT_ID)
