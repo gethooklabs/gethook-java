@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * CustomDomain
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-23T20:22:17.157640461Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-23T20:33:28.699213548Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CustomDomain {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
