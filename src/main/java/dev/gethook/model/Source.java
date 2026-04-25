@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * Source
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-25T12:12:56.804427683Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-25T12:19:41.926212852Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Source {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
