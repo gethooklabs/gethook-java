@@ -28,7 +28,7 @@ import dev.gethook.api.SourcesApi;
 import dev.gethook.auth.ApiKeyAuth;
 
 ApiClient client = Configuration.getDefaultApiClient();
-client.setBasePath("https://api.gethook.io");
+client.setBasePath("https://api.gethook.to");
 
 ApiKeyAuth auth = (ApiKeyAuth) client.getAuthentication("ApiKeyAuth");
 auth.setApiKey("hk_your_api_key");
@@ -39,7 +39,7 @@ List<Source> sources = api.listSources();
 
 ## Documentation
 
-Full API reference: https://docs.gethook.io/api-reference.html
+Full API reference: https://docs.gethook.to/reference
 
 ## Development
 
