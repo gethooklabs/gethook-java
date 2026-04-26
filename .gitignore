@@ -1,0 +1,6 @@
+openapi.yaml
+target/
+*.class
+*.jar
+.openapi-generator/
+.mvn/
