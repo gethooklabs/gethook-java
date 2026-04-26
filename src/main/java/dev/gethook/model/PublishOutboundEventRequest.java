@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * PublishOutboundEventRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-26T23:09:31.089810416Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-26T23:46:15.654965786Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class PublishOutboundEventRequest {
   public static final String SERIALIZED_NAME_EVENT_TYPE = "event_type";
   @SerializedName(SERIALIZED_NAME_EVENT_TYPE)
