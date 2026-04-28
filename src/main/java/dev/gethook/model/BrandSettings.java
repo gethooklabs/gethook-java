@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * BrandSettings
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-28T17:06:39.674796429Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-04-28T17:30:30.806937792Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class BrandSettings {
   public static final String SERIALIZED_NAME_ACCOUNT_ID = "account_id";
   @SerializedName(SERIALIZED_NAME_ACCOUNT_ID)
