@@ -13,7 +13,7 @@
 
 package dev.gethook;
 
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-02T06:49:48.510354739Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-02T10:19:30.632986740Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class Pair {
   private final String name;
   private final String value;
