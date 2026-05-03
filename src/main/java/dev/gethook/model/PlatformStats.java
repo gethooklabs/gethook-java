@@ -49,7 +49,7 @@ import dev.gethook.JSON;
 /**
  * PlatformStats
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-02T13:00:12.551831577Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T09:59:28.442842776Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class PlatformStats {
   public static final String SERIALIZED_NAME_DELIVERY_ATTEMPTS = "delivery_attempts";
   @SerializedName(SERIALIZED_NAME_DELIVERY_ATTEMPTS)
