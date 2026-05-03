@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * CreateSourceRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T10:37:20.690661283Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T11:52:49.526761323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CreateSourceRequest {
   /**
    * Gets or Sets authMode
