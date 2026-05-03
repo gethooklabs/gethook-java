@@ -52,7 +52,7 @@ import dev.gethook.JSON;
 /**
  * EventDetailData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T14:44:11.028312911Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T15:45:16.288487215Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class EventDetailData {
   public static final String SERIALIZED_NAME_ATTEMPTS = "attempts";
   @SerializedName(SERIALIZED_NAME_ATTEMPTS)
