@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * CreateCustomDomainRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T11:52:49.526761323Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-03T12:59:34.769600008Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CreateCustomDomainRequest {
   public static final String SERIALIZED_NAME_DOMAIN = "domain";
   @SerializedName(SERIALIZED_NAME_DOMAIN)
