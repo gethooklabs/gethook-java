@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * ProviderPreset
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T22:20:35.538930243Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T22:29:56.049687996Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class ProviderPreset {
   public static final String SERIALIZED_NAME_AUTH_MODE = "auth_mode";
   @SerializedName(SERIALIZED_NAME_AUTH_MODE)
