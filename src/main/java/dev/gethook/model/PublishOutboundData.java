@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * PublishOutboundData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T22:42:27.772590257Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T22:46:52.810534459Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class PublishOutboundData {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
