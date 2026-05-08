@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * CreateAPIKeyRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-07T22:46:52.810534459Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-08T18:51:15.971015656Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CreateAPIKeyRequest {
   public static final String SERIALIZED_NAME_NAME = "name";
   @SerializedName(SERIALIZED_NAME_NAME)
