@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * CreateDestinationRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-08T18:51:15.971015656Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-10T14:14:27.505021452Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class CreateDestinationRequest {
   public static final String SERIALIZED_NAME_AUTH_CONFIG = "auth_config";
   @SerializedName(SERIALIZED_NAME_AUTH_CONFIG)
