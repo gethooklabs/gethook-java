@@ -48,7 +48,7 @@ import dev.gethook.JSON;
 /**
  * RetryPolicy
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-10T14:28:02.864724532Z[Etc/UTC]", comments = "Generator version: 7.20.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2026-05-11T15:44:18.392315850Z[Etc/UTC]", comments = "Generator version: 7.20.0")
 public class RetryPolicy {
   public static final String SERIALIZED_NAME_MAX_ATTEMPTS = "max_attempts";
   @SerializedName(SERIALIZED_NAME_MAX_ATTEMPTS)
